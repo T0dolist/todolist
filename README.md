@@ -1,4 +1,4 @@
-# todolist-frontend
+# todolist
 A simple todo app implemented in react.
 
 ## Installation
