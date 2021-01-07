@@ -1,1 +1,8 @@
-{}
+{
+  "storage": {
+    "todoTable": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
