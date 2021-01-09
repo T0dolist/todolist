@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/todos",
+            "lambdaFunction": "todoLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            },
+            "policyResourceName": "/todos"
+        }
+    ],
+    "resourceName": "todoApi",
+    "apiName": "todoApi",
+    "functionArns": [
+        {
+            "lambdaFunction": "todoLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-todolist-dev-34207-authRole",
+        "unAuthRoleName": "amplify-todolist-dev-34207-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "todoLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
